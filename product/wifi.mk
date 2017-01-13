@@ -6,11 +6,17 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi
 PRODUCT_PACKAGES += \
     hostapd \
+    libwpa_client \
+    wificond \
     wpa_supplicant \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg
+
+# Wi-Fi HIDL
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
