@@ -23,6 +23,8 @@ service gx_fpd /system/vendor/bin/goodixfingerprintd
 
 on property:ro.boot.fingerprint=fpc
     stop gx_fpd
+    start fps_hal
 
 on property:ro.boot.fingerprint=goodix
     start gx_fpd
+    stop fps_hal
