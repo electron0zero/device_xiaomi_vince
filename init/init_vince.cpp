@@ -44,6 +44,7 @@
 #include "util.h"
 
 using android::base::Trim;
+using android::init::property_set;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
